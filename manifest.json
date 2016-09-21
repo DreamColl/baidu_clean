@@ -1,0 +1,13 @@
+
+{
+    "manifest_version": 2,
+    "name": "广告清道夫",
+    "version": "1.0",
+    "description": "清除百度搜索、贴吧、知乎的广告",
+    "content_scripts": [
+        {
+            "matches": ["*://www.baidu.com/"],
+            "js": ["js/clean_baidu.js"]
+        }
+    ]
+}
