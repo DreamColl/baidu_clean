@@ -6,11 +6,11 @@
 
 switch (window.location.host) {
     case "tieba.baidu.com" :
-        $("[title=广告]").hide();
         $(".iframe_wrapper").hide();
         $(".label_text").parent().hide();
         $(".video_frs_head").hide()//贴吧直播推广
         $(".game-head-game-info-wrapper").hide()
+        $("[title=广告]").parent().parent().hide();
         break;
 
     case "www.baidu.com" :
